@@ -1,0 +1,19 @@
+{% extends "main.html" %}
+{% block content %}
+
+<script>ToggleLinks();</script>
+
+<p>
+	<ul> <h2> {{category_name}} Items </h2>
+	{% for item in items %}
+		<li><a href="{{url_for('showItem', category_name = category_name, itemName = item.name, item_id = item.id)}}">{{ item.name }}</a></li>
+	{% endfor %}
+	</ul>
+</p>
+<p> 
+	<a id="newItemLink" href="{{url_for('newItem')}}">New Item</a> | 
+	<a href="{{url_for('editCategory', category_id = category_id)}}">Edit Category</a> | 
+	<a href="{{url_for('deleteCategory', category_id = category_id)}}">Delete Category</a>
+</p>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "main.html" %}
+{% block content %}
+
+<script>ToggleLinks();</script>
+
+<h2>Delete Item</h2>
+<form action="#" method="POST">
+	<label>Delete {{item.name}}?:</label>
+	<br><br>
+	<button type="submit" name="submit">Delete</button>
+	<button type="submit" name="submit" value="cancel">Cancel</button>
+</form>
+
+{% endblock %}

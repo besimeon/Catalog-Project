@@ -1,0 +1,25 @@
+{% extends "main.html" %}
+{% block content %}
+
+<script>ToggleLinks();</script>
+
+<h2>Edit Item</h2>
+<form action="#" method="POST">
+	<label>Name:</label>
+	<input type="text" maxlength="50" name="name" placeholder="{{ item.name }}" required>
+	<br><br>
+	<label>Description:</label>
+	<br>
+	<textarea name="description" rows="5" cols="25" placeholder="{{ item.description }}" required></textarea>
+	<br><br>
+	<label>Category:</label>
+	<select name="category_id">
+		{% for category in categories %}
+			<option value={{category.id}}>{{category.name}}</option>
+		{% endfor %}
+	</select>
+	<br><br>
+	<button type="submit" id="submit">Edit</button>
+</form>
+
+{% endblock %}

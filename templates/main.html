@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='catalogStyles.css') }}">
+		<script>
+			function ToggleLinks(){
+				$("#loginLink").css("display", "none");
+				$("#logoutLink").css("display", "inline");
+				$("#newCategoryLink").css("display", "inline");
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1>Udacity Catalog Project</h1>
+		</header>
+		<section id="mainContainer">
+			<nav id="categoryNav">
+				<ul> <h2>Categories</h2>
+				{% for category in categories %}
+					<li><h3><a href="{{url_for('showCategory', category_name = category.name, category_id = category.id)}}">{{category.name}}</a></h3></li>
+				{% endfor %}
+				</ul>
+				<a id="loginLink" href="{{url_for('showLogin')}}">Login</a> |
+				<a id="logoutLink" href="{{url_for('disconnect')}}" style="display: none">Logout</a> |
+				<a id="newCategoryLink" href="{{url_for('newCategory')}}" style="display: none">New Category</a> |
+			</nav>
+			<section class="mainContent">
+				{% with messages = get_flashed_messages() %}
+					{% if messages %}
+						<ul>
+							{% for message in messages %}
+								<li><b> {{ message }} </b></li>
+							{% endfor %}
+						</ul>
+					{% endif %}
+				{% endwith %}
+
+				{% block content %}
+				{% endblock %}
+			</section>
+		</section>
+		<footer>
+			<p id="footerText"></p>
+		</footer>
+	</body>
+	<script>
+		var currentDate = new Date();
+		var currentYear = currentDate.getFullYear();
+		$("#footerText").html("Blake Simeon " +currentYear);
+	</script>
+</html>
