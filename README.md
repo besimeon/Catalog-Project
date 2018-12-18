@@ -46,3 +46,10 @@ At the time of this posting, the Udacity VM can be found here: https://github.co
 - Type ```python application.py``` to run the application. 
 - Open a web browser and navigate to ```http://localhost:8000```
 - For api access, enter the following address in your application or browser: ```http://localhost:8000/catalog.json```
+
+
+###Close application and VM
+---------------------------
+- Press ctrl-c to close the python application
+- Press ctrl-d to disconnect from the Vagrant VM
+- Type ``` vagrant halt ``` to shut down the virtual machine.
