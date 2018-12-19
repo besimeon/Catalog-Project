@@ -39,7 +39,7 @@ At the time of this posting, the Udacity VM can be found here: https://github.co
 	- Populate the fields in the existing client_secrets.json file with your own project ID's and client secrets. 
 
 
-###Run the application
+### Run the application
 ----------------------
 - Connect to the Vagrant VM via ```vagrant ssh``` command.
 - Navigate to the ```/vagrant/catalog``` directory.
@@ -48,7 +48,7 @@ At the time of this posting, the Udacity VM can be found here: https://github.co
 - For api access, enter the following address in your application or browser: ```http://localhost:8000/catalog.json```
 
 
-###Close application and VM
+### Close application and VM
 ---------------------------
 - Press ctrl-c to close the python application
 - Press ctrl-d to disconnect from the Vagrant VM
