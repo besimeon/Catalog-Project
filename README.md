@@ -1,4 +1,4 @@
-# Logs Analysis Project
+# Catalog Project
 ----------------------
 - This is a project created for Udacity Course: Full Stack Web Developer.
 
