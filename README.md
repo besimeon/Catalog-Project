@@ -1,17 +1,17 @@
-#Logs Analysis Project
+# Logs Analysis Project
 ----------------------
 - This is a project created for Udacity Course: Full Stack Web Developer.
 
 - This project uses Python, Flask, and SQLAlchemy to create a catalog web application.  You can authenticate using a Google account, create, edit, and delete items and categories in the catalog.  
 
 
-##Table of Contents
+## Table of Contents
 -------------------
 - [Prerequisites](#prerequisites)
 - [Install](#install)
 
 
-##Prerequisites
+## Prerequisites
 ---------------
 - VirtualBox
 - Vagrant
@@ -21,14 +21,14 @@
 	- OptionB: your own enviornment configured to run Python 2.x, Flask, SQLAlchemy, and serve http on port 8000. 
 
 
-##Install
+## Install
 ---------
 - Ensure either the Udacity fullstack nanodegree VM is installed OR that your own enviornment is configured per the specifications listed in the prerequisites section in this readme.  
 
 At the time of this posting, the Udacity VM can be found here: https://github.com/udacity/fullstack-nanodegree-vm .
 
 
-###Configure the application
+### Configure the application
 ----------------------------
 - Start the Vagrant VM by running Vagrant up per the Udacity Fullstack-nanodegree-vm readme instructions.
 - Extract the contents of CatalogProj to the /vagrant/catalog directory.
