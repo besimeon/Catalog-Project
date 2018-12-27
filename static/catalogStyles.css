@@ -1,20 +1,24 @@
 body {
+	font-family: sans-serif, Tahoma, Geneva;
 	margin: 0%;
-	text-align: center;
+	/*text-align: center;*/
 }
 
 #categoryNav {
 	border-right: 1px solid #A9A9A9;
 	padding: 2%;
+	margin: 0 0 0 auto;
 }
 
 #footerText {
 	text-align: center;
+	text-indent: 0;
 	font-size: small;
 }
 
 .mainContent {
 	padding: 2%;
+	margin: 0 auto 0 0;
 }
 
 @keyframes slide-right {
@@ -37,7 +41,7 @@ body {
 	animation-duration: 1s;
 	display: flex; 
 	margin: auto;
-	width: 80%;
+	width: 75%;
 }
 
 header, footer, .footerText{
@@ -50,19 +54,35 @@ header, footer, .footerText{
 
 header {
 	background: linear-gradient(rgba(0,0,0,0.33), rgba(0,0,0,0));
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	color: #181818;
+	margin: 1% auto;
+	padding: 1%;
+	width: 75%;
 }
 
 footer {
 	animation-name: slide-right;
 	animation-duration: 1s;
-	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.33));
+	/*background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.33));*/
+	background: linear-gradient(rgba(0,0,0,0.33), rgba(0,0,0,0));
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	color: #080808;
+	width: 75%;
+	padding: 0.5%;
+	margin: 1% auto;
 }
 
 ul {
 	text-align: left;
 }
 
+h2 {
+	color: #404040;
+}
+
 p {
+	color: #404040;
 	text-align: left;
 	text-indent: 5%;
 }
